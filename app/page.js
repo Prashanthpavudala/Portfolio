@@ -10,26 +10,36 @@ import Work from "./components/Work";
 
 export default function Home() {
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false)
 
-  useEffect(()=>{
-    if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.
-    matchMedia('(prefers-color-scheme: dark)').matches)){
-      setIsDarkMode(true);
-    }else{
-      setIsDarkMode(false);
+  useEffect(() => {
+    // Check for saved theme preference or default to light mode
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme')
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        setIsDarkMode(true)
+        document.documentElement.classList.add('dark')
+      } else {
+        setIsDarkMode(false)
+        document.documentElement.classList.remove('dark')
+      }
     }
-  }, []);
+  }, [])
 
-  useEffect(()=>{
-    if(isDarkMode){
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    }else{
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = '';
+  // Update dark mode
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark')
+        localStorage.setItem('theme', 'dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+        localStorage.setItem('theme', 'light')
+      }
     }
-  }, [isDarkMode]);
+  }, [isDarkMode])
 
   return (
     <>
