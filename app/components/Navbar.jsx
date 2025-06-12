@@ -35,8 +35,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         <nav className={`w-full fixed top-0 left-0 px-5 lg:px-8 xl:px-[8%] py-4
         flex items-center justify-between z-50 ${isScroll ? 
             "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
-            <a href='#top'>
+            {/* <a href='#top'>
                 <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt=' ' className='w-28 cursor-pointer mr-14' />
+            </a> */}
+            <a href='#top'>
+                <Image src={assets.logo} alt=' ' className='w-28 cursor-pointer mr-14' />
             </a>
 
             <ul className={`hidden md:flex items-center gap-6 lg:gap-8
@@ -49,8 +52,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </ul>
 
             <div className='flex items-center gap-4'>
-                <button onClick={()=> setIsDarkMode(prev => !prev)}>
+                {/* <button onClick={()=> setIsDarkMode(prev => !prev)}>
                     <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
+                </button> */}
+                <button>
+                    <Image src={assets.moon_icon} alt='' className='w-6'/>
                 </button>
                 <a href='#contact' className='hidden lg:flex items-center gap-3 px-10 
                 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo'>Contact <Image src={assets.arrow_icon} 
