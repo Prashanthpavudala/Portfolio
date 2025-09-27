@@ -15,7 +15,7 @@ const Footer = ({isDarkMode}) => {
       </div>
 
       <div className='text-center sm:flex items:center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
-        <p>© 2025 PrashanthPavudala. All rights reserved</p>
+        <p>© 2025 PrashanthReddyPavudala. All rights reserved</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
             <li><a target='_blank' href='https://github.com/Prashanthpavudala'>Github</a></li>
             <li><a target='_blank' href='https://www.linkedin.com/in/prashanth-reddy-pavudala-0ba3b31b4/'>LinkedIn</a></li>
