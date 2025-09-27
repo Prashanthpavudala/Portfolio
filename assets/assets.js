@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './prashanth.jpeg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -15,7 +15,7 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
+import prashanth from './prashanth.jpeg';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -54,7 +54,7 @@ export const assets = {
     logo_dark,
     mail_icon,
     mail_icon_dark,
-    profile_img,
+    prashanth,
     download_icon,
     hand_icon,
     header_bg_color,
@@ -107,9 +107,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, Python, C++, C, JavaScript, HTML, CSS' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'FrameWorks', description: 'Spring Boot, Spring MVC, Spring Batch, Spring Security, ReactJS, Redux, Hibernate, Pytorch, Keras' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Databases', description: 'MySQL, MongoDB, Neo4j, Redis' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Tools & Platforms', description: 'GitLab CI/CD, Apache Kafka, Docker, Kubernetes, Jenkins, Linux/Unix' }
 ];
 
 export const toolsData = [
