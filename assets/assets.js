@@ -12,7 +12,7 @@ import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-import logo_dark from './logo_dark.png';
+import logo_dark from './logo_dark.jpeg';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import prashanth from './prashanth.jpeg';
@@ -35,6 +35,13 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import kafka from './kafka.png'
+import java from './java.png'
+import docker from './docker.png'
+import mysql from './mysql.png'
+import js from './js.png'
+import spring from './spring.png'
+import springbatch from './springbatch.png';
 
 export const assets = {
     user_image,
@@ -73,29 +80,42 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    java,
+    kafka,
+    docker,
+    mysql,
+    js,
+    spring,
+    springbatch
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Razorpay Payment Integration',
+        description: 'Backend Application',
         bgImage: '/work-1.png',
+        url: 'https://github.com/Prashanthpavudala/razorpay'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Building Damage Assessment',
+        description: 'Deep Learning Project',
         bgImage: '/work-2.png',
+        url: 'https://github.com/Prashanthpavudala/UMBC-CMSC/tree/master/CMSC691'
+
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Kafka Producer and Consumer System',
+        description: 'Streaming Application',
         bgImage: '/work-3.png',
+        producerUrl: 'https://github.com/Prashanthpavudala/KafkaProducer',
+        consumerUrl: 'https://github.com/Prashanthpavudala/KafkaConsumer'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Jwt-Security',
+        description: 'Backend JWT-based authentication and authorization Application',
         bgImage: '/work-4.png',
+        url: 'https://github.com/Prashanthpavudala/Jwt-Security'
     },
 ]
 
@@ -111,9 +131,9 @@ export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, Python, C++, C, JavaScript, HTML, CSS' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'FrameWorks', description: 'Spring Boot, Spring MVC, Spring Batch, Spring Security, ReactJS, Redux, Hibernate, Pytorch, Keras' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Databases', description: 'MySQL, MongoDB, Neo4j, Redis' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Tools & Platforms', description: 'GitLab CI/CD, Apache Kafka, Docker, Kubernetes, Jenkins, Linux/Unix' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Tools & Platforms', description: 'GitLab CI/CD, Apache Kafka, Docker, Jenkins, Linux/Unix' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.java, assets.js,assets.vscode,assets.mysql,assets.mongodb, assets.docker, assets.git, assets.spring, assets.springbatch
 ];
